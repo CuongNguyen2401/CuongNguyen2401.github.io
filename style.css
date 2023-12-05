@@ -1,0 +1,660 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.top-header,
+.nav-header {
+    background-color: #054F32;
+    color: aliceblue;
+}
+
+/* top-header */
+.top-header a {
+    color: aliceblue;
+}
+
+.top-header i {
+    color: #cdb654;
+}
+
+.top-left-header,
+.top-right-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #f8f8f8;
+    text-align: center;
+}
+
+/* nav-header */
+
+.nav-header {
+    text-align: center;
+    padding-top: 5px;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    z-index: 999999 !important;
+    background-color: #054F32;
+    width: 100%;
+
+}
+
+nav {
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.menu>li {
+    display: flex;
+    padding: 15px 10px;
+}
+
+nav .special {
+    display: none;
+}
+
+.menu>li:hover a {
+    color: #cdb654;
+}
+
+.menu>li:hover ul {
+    display: block;
+    color: #cdb654;
+
+}
+
+/* nhớ css thêm cho đẹp desktop */
+.menu-drop-parent ul {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 50px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.menu-drop-parent ul li {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdb654;
+}
+
+.menu-drop-parent ul li:last-child {
+    border: none;
+}
+
+.menu .menu-drop-parent {
+    position: relative;
+    padding-right: 20px !important;
+}
+
+.menu-drop-parent::after {
+    font-family: 'FontAwesome';
+    content: '\f107';
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    color: #f8f8f8;
+}
+
+.textCustom .text-detail {
+    position: absolute;
+    z-index: 99999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.textCustom .text-detail h2 {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #cdb654;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 46px;
+}
+
+.textCustom .text-detail p {
+    background-color: rgba(255, 255, 255, 0.75);
+    color: black;
+    padding: 10px
+}
+
+/* main */
+main {
+    font-family: 'Roboto', sans-serif;
+}
+
+main>div {
+    margin: 80px 0;
+}
+
+.welcome-block,
+.service-block,
+.intro-text {
+    text-align: center;
+}
+
+/* 
+.intro-text p {
+    color: #dcdcdc;
+} */
+
+.welcome-block h4 {
+    opacity: 0.65;
+    font-weight: 500;
+}
+
+.welcome-block h2 {
+    font-weight: 600;
+}
+
+.welcome-block button {
+    padding: 5px 10px;
+    color: #cdb654;
+    background-color: transparent;
+    border: 2px solid #cdb654;
+    cursor: pointer;
+    border-top: 4px solid #cdb654;
+    border-right: 3px solid #cdb654;
+    font-weight: bold;
+}
+
+.welcome-block button:hover {
+    color: white;
+    background-color: #cdb654;
+}
+
+/* service-block */
+.service-block,
+.room-type {
+    background-color: white;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.title-text h3 {
+    color: #cdb654;
+}
+
+/* card */
+/* .card {
+    border: none;
+    border-radius: 0%;
+} */
+
+.card-body {
+    background-color: white;
+    color: black;
+}
+
+.card-img-top,
+.card-footer:last-child {
+    border-radius: 0%;
+}
+
+.card-footer {
+    background-color: rgb(128, 128, 128);
+    border: 0;
+}
+
+.card-footer a {
+    color: white;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: 13px;
+}
+
+.card-footer .row div:first-child {
+    position: relative;
+}
+
+.card-footer .row div:first-child::after {
+    position: absolute;
+    content: '';
+    height: 48px;
+    border-right: 1px solid #ccc;
+    top: -12px;
+    right: 0px;
+}
+
+/* end */
+/* end */
+/* convinient */
+.convinient-block i {
+    color: #cdb654;
+}
+
+/* room-type */
+.room-type .card-title {
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.room-type .card-body p {
+    color: rgb(128, 128, 128);
+    padding-left: 15px;
+    position: relative;
+}
+
+.room-type .card-body p::before {
+    font-family: 'FontAwesome';
+    content: '\f105';
+    position: absolute;
+    left: 3px;
+    font-weight: bold;
+    color: #cdb654;
+    z-index: 999;
+}
+
+.room-type a {
+    padding: 6px;
+    font-weight: 500;
+    color: white;
+    background-color: #cdb654;
+    border: none;
+    cursor: pointer;
+}
+
+.room-type {
+    margin-bottom: 0;
+    padding-bottom: 80px;
+}
+
+/* contactUs */
+.contactUs {
+    background-image: url(inc/images/download.jpg);
+    background-size: cover;
+    padding: 250px;
+    color: aliceblue;
+    margin-top: 0;
+}
+
+.contactUs h2 {
+    font-size: 24px;
+    color: #cdb654;
+}
+
+.contact-detail {
+    padding: 40px 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact-detail label {
+    display: block;
+    font-size: 16px;
+}
+
+.contact-detail input,
+.contact-detail select {
+    width: 400px;
+    height: 40px;
+    border-radius: 2px;
+    padding: 0 15px;
+}
+
+.contact-detail .col-md-6>div {
+    margin-bottom: 10px;
+}
+
+.contact-detail button {
+    padding: 10px 100px;
+    margin-top: 20px;
+    color: white;
+    background-color: #cdb654;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+/* news-block */
+.news-card {
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+    -webkit-box-shadow: 3px 6px 12px -1px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: 3px 6px 12px -1px rgba(0, 0, 0, 0.62);
+    box-shadow: 3px 6px 12px -1px rgba(0, 0, 0, 0.62);
+
+}
+
+.news-card:nth-child(2) {
+    margin-top: 30px;
+}
+
+.news-card-body {
+    padding: 10px 10px 20px;
+}
+
+.news-card-body h5 {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.news-card-body h5::after {
+    content: '';
+    width: 40px;
+    position: absolute;
+    bottom: 8px;
+    z-index: 999999;
+    border-bottom: 2px solid rgb(199, 199, 199);
+    left: 0;
+}
+
+
+.detail-url {
+    color: #cdb654;
+    border: 2px solid #cdb654;
+    font-size: 20px;
+    padding: 5px 10px;
+    transition: 0.6s;
+}
+
+.detail-url:hover {
+    background-color: #cdb654;
+    color: white;
+}
+
+.news-card img {
+    height: 220px;
+}
+
+.full-card .singleImg img {
+    height: 200px;
+}
+
+.full-card .singleImg {
+    position: relative;
+}
+
+.full-card .singleImg p {
+    position: absolute;
+    bottom: 48px;
+    z-index: 99999;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.middle-text {
+    bottom: 0 !important;
+}
+
+
+
+/* footer */
+footer {
+    background-color: #054f32;
+
+}
+
+footer i {
+    color: #cdb654;
+}
+
+.main-footer {
+    border-bottom: 1px solid #ccc;
+    padding: 50px 0;
+}
+
+.main-footer ul li {
+    list-style: none;
+    padding-bottom: 15px;
+}
+
+.main-footer h3 {
+    color: #cdb654;
+    padding-bottom: 15px;
+}
+
+.main-footer p,
+.main-footer ul li {
+    color: white;
+}
+
+.main-footer .input-email {
+    position: relative;
+}
+
+.main-footer .col-md-3:last-child a i {
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(137, 137, 137);
+}
+
+/* goTop */
+.goTop {
+    display: none;
+}
+
+#topScroll {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    border-radius: 50%;
+    padding: 9px 15px;
+    background-color: black;
+    /* display: none; */
+    cursor: pointer;
+    color: gray;
+}
+
+.closeMenu {
+    display: none;
+    font-size: 40px;
+    position: fixed;
+    top: 0;
+    right: 50%;
+    color: gray;
+}
+
+/* breakpoint */
+@media (max-width: 768px) {
+
+    /* navigation */
+    .top-header {
+        display: none;
+    }
+
+    .nav-header .col-md-3 {
+        display: none;
+    }
+
+    .closeMenu {
+        display: block;
+    }
+
+    .nav-header .menu {
+        position: fixed;
+        top: 0;
+        bottom: -15px;
+        left: 0;
+        right: 40%;
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding-top: 50px;
+
+    }
+
+    .nav-header {
+        top: 0 !important;
+    }
+
+    .nav-header .menu>li {
+        display: block;
+        text-align: left;
+    }
+
+    .menu-drop-parent::after {
+        display: none;
+    }
+
+    .nav-header .menu .menu-drop {
+        display: none;
+    }
+
+    .nav-header nav .special {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: #cdb654;
+        font-weight: bold;
+        padding: 0;
+    }
+
+    .special i {
+        border: 1px solid #cdb654;
+        padding: 10px;
+    }
+
+    .nav-header .menu {
+        display: none;
+    }
+
+    .text-detail p {
+        display: none;
+    }
+
+    .text-detail h2 {
+        width: 295px;
+    }
+
+    /* end */
+    main>div {
+        margin: 0;
+    }
+
+    header .slider {
+        margin-top: 100px !important;
+    }
+
+
+    .welcome-block {
+        padding-top: 50px;
+    }
+
+    .welcome-block .col-md-6 {
+        margin-bottom: 50px;
+    }
+
+    .card-item>div {
+        margin: 10px 0;
+    }
+
+    .service-block {
+        padding-bottom: 50px;
+    }
+
+    .convinient-block {
+        padding: 50px 0;
+    }
+
+    .main-footer h3 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .myCustom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .input-email {
+        width: 300px;
+    }
+
+    .main-footer {
+        border: none;
+    }
+
+    .contactUs {
+        padding: 20px;
+    }
+
+    .contact-detail input,
+    .contact-detail select {
+        width: 300px;
+    }
+
+    .contactUs form {
+        margin: 80px 0;
+        text-align: center;
+    }
+
+    .news-block {
+        margin-top: 40px;
+    }
+
+}
+
+/* others */
+.mr-50px {
+    margin-right: 50px;
+}
+
+.ml-50px {
+    margin-left: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 500;
+}
+
+.intro-text {
+    margin-bottom: 20px;
+}
+
+.intro-text h3 {
+    color: #cdb654
+}
