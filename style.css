@@ -40,7 +40,7 @@ a:hover {
     top: 45px;
     left: 0;
     z-index: 999999 !important;
-    background-color: #054F32;
+    background-color: rgb(5, 77, 48);
     width: 100%;
 
 }
@@ -175,24 +175,24 @@ main>div {
 
 .welcome-block button {
     padding: 5px 10px;
-    color: #cdb654;
+    color: #054d30;
     background-color: transparent;
-    border: 2px solid #cdb654;
+    border: 2px solid #054d30;
     cursor: pointer;
-    border-top: 4px solid #cdb654;
-    border-right: 3px solid #cdb654;
-    font-weight: bold;
+    border-top: 4px solid #054d30;
+    border-right: 3px solid #054d30;
+    font-weight: 500;
 }
 
 .welcome-block button:hover {
     color: white;
-    background-color: #cdb654;
+    background-color: #054d30;
 }
 
 /* service-block */
 .service-block,
 .room-type {
-    background-color: white;
+    background-color:white;
     color: black;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -219,7 +219,7 @@ main>div {
 }
 
 .card-footer {
-    background-color: rgb(128, 128, 128);
+    background-color: #054F32;
     border: 0;
 }
 
@@ -656,5 +656,6 @@ h5 {
 }
 
 .intro-text h3 {
-    color: #cdb654
+    color: #054d30;
+    font-size: 40px;
 }
