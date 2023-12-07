@@ -234,7 +234,7 @@ main>div {
 }
 
 .card-text {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .card-footer .row div:first-child {
@@ -476,10 +476,10 @@ footer i {
     right: 30px;
     border-radius: 50%;
     padding: 9px 15px;
-    background-color: black;
+    background-color: #054F32;
     /* display: none; */
     cursor: pointer;
-    color: gray;
+    color: white;
 }
 
 .closeMenu {
